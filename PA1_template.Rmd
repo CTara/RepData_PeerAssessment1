@@ -3,8 +3,24 @@ title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
     keep_md: true
+
 ---
 
+## Loading required library
+```{r echo = TRUE}
+library(lattice)
+```
+
+-----
+
+## Downloading data
+```{r echo = TRUE}
+url <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+download.file(url,"data.zip")
+unzip("data.zip",exdir = "data")
+```
+
+-----
 
 ## Loading and preprocessing the data
 
